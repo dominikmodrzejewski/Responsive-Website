@@ -15,6 +15,7 @@ body {
 }
 
 nav {
+    z-index: 1;
     text-transform: uppercase;
     a, i {
         color: $white;
@@ -41,10 +42,10 @@ nav {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    z-index: -2;
-   // background-repeat: no-repeat;
+    z-index: 0;
+   
 }
-
+header {
     .header-bg {
         position: absolute;
         height: 100%;
@@ -62,7 +63,7 @@ nav {
         z-index: 5;
         color: $white;
         font-weight: bold;
-        text-shadow: 3px 3px 3px black;
+        
            h1 {
                margin-bottom: 10px;
                text-align: center;
@@ -73,16 +74,32 @@ nav {
                 text-align: center;
                 font-style: italic;
                 font-size: 15px;
+                text-shadow: 3px 3px 3px black;
            }
            
         
     }
-.blue-text {
-    color: $blue-color
-}
+   
+    .btn-light {
+        text-transform: uppercase;
+    }
+
     
 
+    .fa-chevron-down {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 20px;
+        font-size: 40px;
+        color: $white;
+    }
+}
 
+.blue-text {
+    text-shadow: 3px 3px 3px black;
+    color: $blue-color
+    }
 @media (min-width: 1200px) {
     .header-image {
         background-image: url('/Responsive-Website/img/business-5475661_1920.jpg');

@@ -13,6 +13,7 @@ body {
 }
 
 nav {
+  z-index: 1;
   text-transform: uppercase;
 }
 
@@ -39,10 +40,10 @@ nav .active {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  z-index: -2;
+  z-index: 0;
 }
 
-.header-bg {
+header .header-bg {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -50,7 +51,7 @@ nav .active {
   z-index: -10;
 }
 
-.header-text {
+header .header-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,23 +69,38 @@ nav .active {
   z-index: 5;
   color: #fff;
   font-weight: bold;
-  text-shadow: 3px 3px 3px black;
 }
 
-.header-text h1 {
+header .header-text h1 {
   margin-bottom: 10px;
   text-align: center;
   font-weight: inherit;
   font-size: 40px;
 }
 
-.header-text p {
+header .header-text p {
   text-align: center;
   font-style: italic;
   font-size: 15px;
+  text-shadow: 3px 3px 3px black;
+}
+
+header .btn-light {
+  text-transform: uppercase;
+}
+
+header .fa-chevron-down {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 20px;
+  font-size: 40px;
+  color: #fff;
 }
 
 .blue-text {
+  text-shadow: 3px 3px 3px black;
   color: #2184f5;
 }
 
