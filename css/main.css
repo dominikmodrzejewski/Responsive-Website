@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #333;
+}
+<<<<<<< HEAD
+
+nav {
+  text-transform: uppercase;
+}
+
+nav a, nav i {
+  color: #fff;
+}
+
+nav a:hover {
+  color: #1395d1;
+}
+
+nav .fa-bars {
+  padding: 10px;
+}
+
+nav .active {
+  color: #1395d1;
+}
+
+.header-image {
+  position: relative;
+  height: 100vh;
+  background-image: url("/Responsive-Website/img/business-5475661_1280.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: -2;
+}
+
+.header-bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -10;
+}
+
+.header-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  z-index: 5;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 3px 3px 3px black;
+}
+
+.header-text h1 {
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: inherit;
+  font-size: 40px;
+}
+
+.header-text p {
+  text-align: center;
+  font-style: italic;
+  font-size: 15px;
+}
+
+.blue-text {
+  color: #1395d1;
+}
+
+@media (min-width: 1200px) {
+  .header-image {
+    background-image: url("/Responsive-Website/img/business-5475661_1920.jpg");
+  }
+  .header-text h1 {
+    font-size: 70px;
+  }
+  .header-text p {
+    font-size: 25px;
+  }
+}
+=======
+>>>>>>> parent of 5a673af (styling navigation)
+/*# sourceMappingURL=main.css.map */

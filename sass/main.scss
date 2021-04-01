@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #333;
+<<<<<<< HEAD
+}
+
+nav {
+    text-transform: uppercase;
+    a, i {
+        color: $white;
+    }
+    
+    a:hover {
+        color: $blue-color;
+    }
+
+    .fa-bars {
+        padding: 10px;
+    }
+
+    .active {
+        color: $blue-color
+    }
+}
+
+.header-image {
+    position: relative;
+    height: 100vh;
+    background-image: url('/Responsive-Website/img/business-5475661_1280.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -2;
+   // background-repeat: no-repeat;
+}
+
+    .header-bg {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0,0,0,.5);
+        z-index: -10;
+    }
+
+    .header-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+        z-index: 5;
+        color: $white;
+        font-weight: bold;
+        text-shadow: 3px 3px 3px black;
+           h1 {
+               margin-bottom: 10px;
+               text-align: center;
+               font-weight: inherit;
+               font-size: 40px;
+           }
+           p {
+                text-align: center;
+                font-style: italic;
+                font-size: 15px;
+           }
+           
+        
+    }
+.blue-text {
+    color: $blue-color
+}
+    
+
+
+@media (min-width: 1200px) {
+    .header-image {
+        background-image: url('/Responsive-Website/img/business-5475661_1920.jpg');
+    }
+    .header-text h1 {
+        font-size: 70px;
+    }
+    .header-text p {
+        font-size: 25px;
+    }
+}
+
+
+    
+
+
+
+=======
+}
+>>>>>>> parent of 5a673af (styling navigation)
