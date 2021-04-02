@@ -12,9 +12,15 @@ body {
   background-color: #333;
 }
 
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 nav {
-  z-index: 1;
   text-transform: uppercase;
+  -webkit-transition: background-color .6s;
+  transition: background-color .6s;
+  z-index: 1;
 }
 
 nav a, nav i {
@@ -33,7 +39,21 @@ nav .active {
   color: #2184f5;
 }
 
-.header-image {
+header h1 {
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: inherit;
+  font-size: 30px;
+}
+
+header p {
+  text-align: center;
+  font-style: italic;
+  font-size: 15px;
+  text-shadow: 3px 3px 3px black;
+}
+
+header .header-image {
   position: relative;
   height: 100vh;
   background-image: url("/Responsive-Website/img/business-5475661_1280.jpg");
@@ -71,20 +91,6 @@ header .header-text {
   font-weight: bold;
 }
 
-header .header-text h1 {
-  margin-bottom: 10px;
-  text-align: center;
-  font-weight: inherit;
-  font-size: 40px;
-}
-
-header .header-text p {
-  text-align: center;
-  font-style: italic;
-  font-size: 15px;
-  text-shadow: 3px 3px 3px black;
-}
-
 header .btn-light {
   text-transform: uppercase;
 }
@@ -104,15 +110,27 @@ header .fa-chevron-down {
   color: #2184f5;
 }
 
+@media (min-width: 375px) {
+  header h1 {
+    font-size: 36px;
+  }
+  header p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 45px;
+  }
+  header p {
+    font-size: 20px;
+  }
+}
+
 @media (min-width: 1200px) {
-  .header-image {
-    background-image: url("/Responsive-Website/img/business-5475661_1920.jpg");
-  }
-  .header-text h1 {
-    font-size: 70px;
-  }
-  .header-text p {
-    font-size: 25px;
+  header .header-image {
+    background-image: url(../img/business-5475661_1920.jpg);
   }
 }
 /*# sourceMappingURL=main.css.map */

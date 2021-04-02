@@ -14,9 +14,16 @@ body {
     background-color: #333;
 }
 
+.shadow-bg {
+    background-color: rgba(0,0,0,.8);
+}
+
+
+
 nav {
-    z-index: 1;
     text-transform: uppercase;
+    transition: background-color .6s;
+    z-index: 1;
     a, i {
         color: $white;
         
@@ -34,18 +41,31 @@ nav {
         color: $blue-color
     }
 }
-
-.header-image {
-    position: relative;
-    height: 100vh;
-    background-image: url('/Responsive-Website/img/business-5475661_1280.jpg');
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    z-index: 0;
-   
-}
 header {
+
+    h1 {
+        margin-bottom: 10px;
+        text-align: center;
+        font-weight: inherit;
+        font-size: 30px;
+    }
+    p {
+         text-align: center;
+         font-style: italic;
+         font-size: 15px;
+         text-shadow: 3px 3px 3px black;
+    }
+    .header-image {
+        position: relative;
+        height: 100vh;
+        background-image: url('/Responsive-Website/img/business-5475661_1280.jpg');
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        z-index: 0;
+   
+    }
+
     .header-bg {
         position: absolute;
         height: 100%;
@@ -64,18 +84,7 @@ header {
         color: $white;
         font-weight: bold;
         
-           h1 {
-               margin-bottom: 10px;
-               text-align: center;
-               font-weight: inherit;
-               font-size: 40px;
-           }
-           p {
-                text-align: center;
-                font-style: italic;
-                font-size: 15px;
-                text-shadow: 3px 3px 3px black;
-           }
+           
            
         
     }
@@ -100,17 +109,37 @@ header {
     text-shadow: 3px 3px 3px black;
     color: $blue-color
     }
-@media (min-width: 1200px) {
-    .header-image {
-        background-image: url('/Responsive-Website/img/business-5475661_1920.jpg');
+
+    @media (min-width: 375px) {
+        header {
+            h1 {
+                font-size: 36px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
     }
-    .header-text h1 {
-        font-size: 70px;
+
+    @media (min-width: 768px) {
+        header {
+            h1 {
+                font-size: 45px;
+            }
+            p {
+                font-size: 20px;
+            }
+        }
+    }        
+
+
+    @media (min-width: 1200px) {
+        header {
+            .header-image {
+                background-image: url(../img/business-5475661_1920.jpg);
+            }
+        }
     }
-    .header-text p {
-        font-size: 25px;
-    }
-}
 
 
     
