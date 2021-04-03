@@ -12,15 +12,32 @@ body {
   background-color: #333;
 }
 
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.underline {
+  margin: 0 auto 40px;
+  width: 60px;
+  height: 4px;
+  background-color: #08bef5;
+}
+
+.blue-text {
+  text-shadow: 3px 3px 3px black;
+  color: #08bef5;
+}
+
 .shadow-bg {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
 nav {
-  text-transform: uppercase;
   -webkit-transition: background-color .6s;
   transition: background-color .6s;
   z-index: 1;
+  text-transform: uppercase;
 }
 
 nav a, nav i {
@@ -28,7 +45,7 @@ nav a, nav i {
 }
 
 nav a:hover {
-  color: #2184f5;
+  color: #08bef5;
 }
 
 nav .fa-bars {
@@ -36,7 +53,7 @@ nav .fa-bars {
 }
 
 nav .active {
-  color: #2184f5;
+  color: #08bef5;
 }
 
 header h1 {
@@ -105,9 +122,22 @@ header .fa-chevron-down {
   color: #fff;
 }
 
-.blue-text {
-  text-shadow: 3px 3px 3px black;
-  color: #2184f5;
+.aboutus i {
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+.aboutus .aboutus-card-title {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.aboutus .aboutus-card-text {
+  font-size: 14px;
+}
+
+.aboutus .aboutus-hover:hover {
+  color: #08bef5;
 }
 
 @media (min-width: 375px) {
