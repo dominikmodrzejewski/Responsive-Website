@@ -8,8 +8,13 @@
     padding: 0;
 }
 
+html {
+    scroll-padding-top: 66px;
+}
+
 
 body {
+    position: relative;
     font-family: 'Montserrat', sans-serif;
     background-color: #333;
 }
@@ -27,6 +32,7 @@ h2 {
 }
 
 .blue-text {
+    text-transform: uppercase;
     text-shadow: 3px 3px 3px black;
     color: $main-color;
 }
@@ -35,12 +41,13 @@ h2 {
     background-color: rgba(0,0,0,.8);
 }
 
-
 nav {
     transition: background-color .6s;
     z-index: 1;
     text-transform: uppercase;
-    a, i {
+
+    a,
+    i {
         color: $white;
         
     }
@@ -65,6 +72,7 @@ header {
         text-align: center;
         font-weight: inherit;
         font-size: 30px;
+        text-transform: uppercase;
     }
     p {
          text-align: center;
@@ -72,6 +80,7 @@ header {
          font-size: 15px;
          text-shadow: 3px 3px 3px black;
     }
+
     .header-image {
         position: relative;
         height: 100vh;
@@ -100,17 +109,11 @@ header {
         z-index: 5;
         color: $white;
         font-weight: bold;
-        
-           
-           
-        
     }
    
     .btn-light {
         text-transform: uppercase;
     }
-
-    
 
     .fa-chevron-down {
         position: absolute;
@@ -128,7 +131,6 @@ header {
         font-size: 30px;
     }
 
-
     .aboutus-card-title {
         font-size: 18px;
         text-transform: uppercase;
@@ -138,10 +140,50 @@ header {
         font-size: 14px;
     }
 
+    .aboutus-hover {
+        transition: color .3s;
+    }
+
     .aboutus-hover:hover {
         color: $main-color;
     }
 }
+
+.aboutus-hero {
+    .aboutus-image {
+        position: relative;
+        height: 100vh;
+        background-image: url('/Responsive-Website/img/business-5475661_1280.jpg');
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        z-index: 0;
+            i {
+                font-size: 30px;
+            }
+    }
+    .aboutus-shadow {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0,0,0,.5);
+        z-index: -10;
+    }
+
+    .aboutus-text {
+        padding-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: auto;
+        flex-direction: column;
+        height: 100%;
+        z-index: 5;
+        color: $white;
+        font-weight: bold;
+    }
+
+}
+
 
     @media (min-width: 375px) {
         header {
@@ -165,6 +207,11 @@ header {
         }
     }        
 
+    @media (min-width: 992px) {
+        html {
+            scroll-padding-top: 56px;
+        }
+    }
 
     @media (min-width: 1200px) {
         header {
@@ -173,6 +220,8 @@ header {
             }
         }
     }
+
+    
 
 
     
