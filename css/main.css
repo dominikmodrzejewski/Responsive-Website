@@ -8,13 +8,13 @@
 }
 
 html {
-  scroll-padding-top: 66px;
+  scroll-padding-top: 82px;
 }
 
 body {
   position: relative;
   font-family: 'Montserrat', sans-serif;
-  background-color: #333;
+  background-color: #ebecf2;
 }
 
 h2 {
@@ -153,10 +153,41 @@ header .fa-chevron-down {
   color: #08bef5;
 }
 
+.aboutus-hero {
+  position: relative;
+  background-image: url(..//img/technology-2818664_640.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #ddd;
+  z-index: 0;
+}
+
+.aboutus-hero .aboutus-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -5;
+}
+
+.aboutus-hero .aboutus-hero-item {
+  margin: 10px 0;
+}
+
+.aboutus-hero .aboutus-hero-item i {
+  font-size: 36px;
+}
+
+.aboutus-hero .aboutus-hero-item .aboutus-hero-title {
+  font-size: 24px;
+}
+
 .aboutus-hero .aboutus-image {
   position: relative;
   height: 100vh;
-  background-image: url("/Responsive-Website/img/business-5475661_1280.jpg");
+  background-image: url("/img/technology-2818664_640.jpg");
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -196,6 +227,132 @@ header .fa-chevron-down {
   font-weight: bold;
 }
 
+.portfolio .carousel-item {
+  position: relative;
+  height: 600px;
+}
+
+.portfolio .carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 40px 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.portfolio .carousel-indicators {
+  padding-bottom: 20px;
+}
+
+.prices .price-wrap .price-box {
+  margin: 20px 10px;
+  padding: 30px;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+.prices .price-wrap .price-box h3 {
+  text-transform: uppercase;
+  color: #08bef5;
+}
+
+.prices .price-wrap .price-box span {
+  font-weight: bold;
+}
+
+.prices .price-wrap .price-box i {
+  font-size: 24px;
+  padding: 0 3px;
+}
+
+.prices .price-wrap .price-box button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+.prices .price-wrap .price-box .price-tag {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.prices .price-wrap .price-box:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.prices .price-wrap .price-text {
+  margin-top: 30px;
+}
+
+.prices .price-wrap .price-text .contact {
+  text-decoration: none;
+}
+
+.team .card {
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.team .card img {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.team .card:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.team .card-title {
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.team h2 {
+  color: #ddd;
+}
+
+.team small {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.team small i {
+  color: #08bef5;
+  padding: 10px;
+}
+
+.hero {
+  position: relative;
+  background-image: url(../img/team/conference-room-768441_1920.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  z-index: 0;
+}
+
+.hero .shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -5;
+}
+
 @media (min-width: 375px) {
   header h1 {
     font-size: 36px;
@@ -215,8 +372,14 @@ header .fa-chevron-down {
 }
 
 @media (min-width: 992px) {
-  html {
-    scroll-padding-top: 56px;
+  nav {
+    height: 82px;
+  }
+  .aboutus-image {
+    background-image: url("/img/technology-2818664.jpg");
+  }
+  .prices .price-info {
+    font-size: 18px;
   }
 }
 
