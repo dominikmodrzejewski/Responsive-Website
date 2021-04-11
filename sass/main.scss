@@ -287,16 +287,40 @@ header {
 }
 
 .team {
+    position: relative;
+    background-image: url('../img/team/conference-room-768441_1920.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+
+    h2 {
+        color: $light-gray;
+    }
+
+    .team-shadow {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .8);
+        z-index: -5;
+    }
+
     .card {
         transition: transform .3s;
+
         img {
             height: 300px;
             object-fit: cover;
         }
+
+        i {
+            padding: 10px;
+        }
     }
 
     .card:hover {
-        transform: scale(0.9);
+        transform: scale(.96);
     }
 
     .card-title {
@@ -305,41 +329,12 @@ header {
         text-transform: uppercase;
     }
 
-    h2 {
-        color:$light-gray
-    }
-
-    small {
-        display: flex;
-        text-align: center;
-        justify-content: space-around;
-        
-        i {
-            color: $main-color;
-            padding: 10px;
-        }
-    }
-}
-
-.hero {
-    position: relative;
-    background-image: url(../img/team/conference-room-768441_1920.jpg);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    z-index: 0;
-
-    .shadow {
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, .7);
-        z-index: -5;
+    .card-body {
+        height: 160px;
     }
 
 }
+
 
 
 
