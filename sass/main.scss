@@ -335,7 +335,27 @@ header {
 
 }
 
+.achivements {
+    i {
+        padding: 10px;
+        font-size: 48px;
+        color: $white;
+        text-shadow: 0 0 5px #000;
+    }
 
+    .achivements-list{
+        padding: 20px 0;
+    }
+
+    .achivement-number {
+        font-style: 22px;
+    }
+    .achivement-text {
+        font-size: 13px;
+        text-transform: uppercase;
+    }
+
+}
 
 
 
