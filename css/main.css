@@ -365,6 +365,46 @@ header .fa-chevron-down {
   text-transform: uppercase;
 }
 
+.contact {
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/skyline-1869214_640.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: 0;
+  color: #fff;
+}
+
+.contact .contact-us {
+  color: #fff;
+}
+
+.contact .contact-us h3 {
+  text-transform: uppercase;
+}
+
+.contact .contact-us .social-media a {
+  color: #fff;
+  font-size: 18px;
+  padding: 0 10px;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+}
+
+.contact .contact-us .social-media a:hover {
+  color: #ddd;
+}
+
+.contact-shadow {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -10;
+}
+
 @media (min-width: 375px) {
   header h1 {
     font-size: 36px;
@@ -389,6 +429,9 @@ header .fa-chevron-down {
   }
   .aboutus-image {
     background-image: url("/img/technology-2818664.jpg");
+  }
+  .contact {
+    background-image: url("../img/skyline-1869214_1920.jpg");
   }
   .prices .price-info {
     font-size: 18px;

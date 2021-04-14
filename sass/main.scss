@@ -357,6 +357,48 @@ header {
 
 }
 
+.contact {
+        
+        position: relative;
+        height: 100vh;
+        background-image: url('../img/skyline-1869214_640.jpg');
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        z-index: 0;
+        color: $white;
+        
+        .contact-us {
+            color: $white;
+            h3 {
+                text-transform: uppercase;
+            }
+            .social-media {
+                a {
+                    color: $white;
+                    font-size: 18px;
+                    padding: 0 10px;
+                    transition: color .5s;
+                }
+                a:hover {
+                    color: $light-gray
+                }
+            }
+        }
+        
+   
+    }
+    .contact-shadow {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, .5);
+        z-index: -10;
+
+    }
+
+
 
 
 
@@ -394,6 +436,9 @@ header {
 
     .aboutus-image {
         background-image: url('/img/technology-2818664.jpg');
+    }
+    .contact {
+        background-image: url('../img/skyline-1869214_1920.jpg');
     }
     .prices{
         .price-info {
