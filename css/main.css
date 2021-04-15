@@ -238,7 +238,7 @@ header .header-text {
   font-weight: bold;
 }
 
-header .btn-light {
+header .btn-outline-light {
   text-transform: uppercase;
 }
 
@@ -264,11 +264,6 @@ header .fa-chevron-down {
 
 .aboutus .aboutus-card-text {
   font-size: 14px;
-}
-
-.aboutus .aboutus-hover {
-  -webkit-transition: color .3s;
-  transition: color .3s;
 }
 
 .aboutus .aboutus-hover:hover {

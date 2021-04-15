@@ -111,9 +111,10 @@ header {
         z-index: 5;
         color: $white;
         font-weight: bold;
+
     }
 
-    .btn-light {
+    .btn-outline-light {
         text-transform: uppercase;
     }
 
@@ -143,7 +144,7 @@ header {
     }
 
     .aboutus-hover {
-        transition: color .3s;
+    //    transition: color .3s;
     }
 
     .aboutus-hover:hover {
